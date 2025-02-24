@@ -1,0 +1,28 @@
+.checkout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout__left {
+    flex: 0.8; /* Adjust the width of the left section */
+}
+
+.checkout__ad {
+    width: 100%; /* Make sure the ad image doesn't exceed the container */
+    margin-bottom: 10px; /* Add some space below the ad */
+    object-fit: contain; /* Ensure the image scales well */
+}
+
+.checkout__title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.checkout__right {
+    flex: 0.2; /* Adjust the width of the right section */
+    padding-left: 20px;
+    border-left: 1px solid lightgray; /* Optional: to create a division between left and right sections */
+}

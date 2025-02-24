@@ -1,0 +1,143 @@
+.addressForm {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addressForm h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #0F1111;
+  font-size: 24px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #111;
+  font-size: 13px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 8px 16px;
+  background: #f0c14b;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+button:active {
+  background: #f0c14b;
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .addressForm {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  .addressForm h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  z-index: 1000;
+  min-width: 300px;
+  animation: slideIn 0.3s ease;
+}
+
+.popup__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup__icon {
+  color: #007600;
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
+}
+
+.popup__button {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  min-width: 120px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
